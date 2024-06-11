@@ -47,7 +47,7 @@
 
             bindings = <
 &kp TAB         &kp Q  &kp W  &kp E      &kp R     &kp T          &kp Y      &kp U   &kp I         &kp O    &kp P     &kp BSPC
-&kp CAPS        &kp A  &kp S  &kp D      &lt 4 F   &kp G          &kp H      &kp J   &kp K         &kp L    &kp SEMI  &kp SQT
+&kp CAPS        &kp A  &kp S  &kp D      &lt 4 F   &lt 5 G        &kp H      &kp J   &kp K         &kp L    &kp SEMI  &kp SQT
 &kp LEFT_SHIFT  &kp Z  &kp X  &kp C      &kp V     &kp B          &kp N      &kp M   &kp COMMA     &kp DOT  &kp FSLH  &mt RSHFT BACKSLASH
                               &kp LCTRL  &kp LGUI  &lt 1 ENTER    &kp SPACE  &tog 2  &lt 3 ESCAPE
             >;
@@ -98,12 +98,21 @@
             >;
         };
 
-        layer_4 {
+        number {
             bindings = <
 &trans  &trans  &trans  &trans  &trans  &trans    &trans  &kp N7        &kp NUMBER_8  &kp N9        &kp N0     &kp BACKSPACE
 &trans  &trans  &trans  &trans  &trans  &trans    &trans  &kp NUMBER_4  &kp N5        &kp NUMBER_6  &kp PLUS   &kp STAR
 &trans  &trans  &trans  &trans  &trans  &trans    &trans  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp MINUS  &kp SLASH
                         &trans  &trans  &trans    &trans  &trans        &trans
+            >;
+        };
+
+        symbol {
+            bindings = <
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &kp AMPERSAND  &kp ASTERISK  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &kp DOLLAR     &kp PERCENT   &kp CARET             &trans                 &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &kp EXCL       &kp AT_SIGN   &kp HASH              &trans                 &trans
+                        &trans  &trans  &trans    &trans  &trans         &trans
             >;
         };
     };
